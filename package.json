@@ -1,21 +1,24 @@
 {
-  "name": "express-4.x-facebook-example",
+  "name": "oauth-google-example",
   "version": "0.0.0",
-  "description": "Express 4.x app using Passport for authentication with Facebook.",
+  "description": "Express 4.x app using Passport for authentication with Google.",
   "keywords": [
     "example",
     "express",
     "passport"
   ],
-  "author": "Jared Hanson",
+  "author": "Prahalad Belavadi",
   "license": "Unlicense",
-  "homepage": "https://github.com/passport/express-4.x-facebook-example",
+  "homepage": "https://github.com/prahaladbelavadi/oauth-google-example",
   "repository": {
     "type": "git",
-    "url": "git://github.com/passport/express-4.x-facebook-example.git"
+    "url": "git://github.com/prahaladbelavadi/oauth-google-example.git"
+  },
+  "scripts":{
+    "start": "node server.js"
   },
   "bugs": {
-    "url": "https://github.com/passport/express-4.x-facebook-example/issues"
+    "url": "https://github.com/prahaladbelavadi/oauth-google-example/issues"
   },
   "dependencies": {
     "body-parser": "^1.13.2",
