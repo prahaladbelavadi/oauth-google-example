@@ -33,6 +33,7 @@ The front end must initiate the authentication proecss with the client ID, enter
 
 I'll include a picture as well, waitt ...
 
+![](./google-oauth.jpg)
 
 Disclaimer:
 This is a derivative of Jared Hanson's repository on an express example on how to do oauth 2.0 with passport for facebook under Unilicense licence.
