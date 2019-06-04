@@ -23,6 +23,17 @@ Do replace `REPLACE_YOUR_GOOGLE_CLIENT_ID_HERE` with your Google Client Id and `
 Open a web browser and navigate to [http://localhost:3000/](http://localhost:3000/)
 to see the example in action.
 
+Note: On retrying this with new credentials,it didn't work; Quite aptly when I was tryinng to show a demo to my dad.
+On debugging, turns out each API is configured differently from Google's end.
+At the API console, the Authorized javascript origins, and the callback needs to be specified.
+The Authorized javascript origin, is a list of domains from where google understands that this is a known request, else anyone would be able to get auth data of your clients using your keys. The Callback is specified to redirect the application after the authentication process is done. Do have a way to handle it.
+
+Ideally, the backend does the auth for the secret is well abstracted away from the user.
+The front end must initiate the authentication proecss with the client ID, enters google auth crednetials, the backend receives the information to be stored and then the front end updates with the auth information.
+
+I'll include a picture as well, waitt ...
+
+
 Disclaimer:
 This is a derivative of Jared Hanson's repository on an express example on how to do oauth 2.0 with passport for facebook under Unilicense licence.
 All my modifications are released under the same license.
